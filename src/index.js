@@ -13,6 +13,7 @@ let KEY = {
 };
 
 let timer;
+const but = document.getElementsByClassName('but');
 const easy = document.getElementById('easy');
 const medium = document.getElementById('medium');
 const hard = document.getElementById('hard');
@@ -49,18 +50,26 @@ var keyHandler = (event) => {
 }
 window.addEventListener('keydown', keyHandler, false);
 
+let disabled = () => {
+    for (var i = 0; i < but.length; i++) {
+        but[i].setAttribute('disabled', true);
+    }
+}
 
 easy.addEventListener('click', () => {
+    disabled();
     timer = setInterval(function () {
         snake.move(timer);
     }, 400);
 });
 medium.addEventListener('click', () => {
+    disabled();
     timer = setInterval(function () {
         snake.move(timer);
     }, 200);
 });
 hard.addEventListener('click', () => {
+    disabled();
     timer = setInterval(function () {
         snake.move(timer);
     }, 100);

@@ -5,6 +5,14 @@ body {
     border: 0;
 }
 
+.but {
+    &:disabled {
+        background: #e5aae7;
+        cursor: none;
+        box-shadow: none;
+    }
+}
+
 .container {
     display: flex;
     align-items: center;
