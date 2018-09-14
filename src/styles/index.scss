@@ -1,0 +1,92 @@
+@import 'tingle';
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#score {
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    color: #3e3939;
+    margin: 20px 0px 20px 0px;
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
+}
+
+.snake {
+    box-shadow: 0 0 10px #7d0b86 inset;
+    background: linear-gradient(to right, #eda6ec, #d148d5);
+    border-radius: 7px;
+    transition: background 0.2s;
+}
+
+#block_field {
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+.cell {
+    display: inline-block;
+    background-color: #d5d3da;
+    width: 22px;
+    height: 22px;
+    transition: background-color 0.3s;
+    margin: 1px 1px 0px 1px;
+}
+
+.apple {
+    background-color: #FF0000;
+    box-shadow: 0 0 10px #000000 inset;
+    transition: background-color 2s;
+    border-radius: 7px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    margin-left: 30px;
+}
+
+button {
+    border: 0;
+    font-size: 21px;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 2px;
+    height: 70px;
+    margin: 8px 0px 8px 0px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #d682d8;
+    font-weight: 700;
+    color: white;
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0 0 10px #6c6666;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+}
+
+.text {
+    font-size: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.tingle-btn {
+    background: #d682d8;
+    font-size: 20px;
+}
